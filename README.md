@@ -20,19 +20,20 @@ Include in your sketch.
 There are a number of variables used by the routines, some of which may need to be defined before 
 including the code. (These are defined, therefore don't really have type.)
 
-"type"  name  default purpose
-class   myGLCD  LCD   class methods (display)
-int     MINX      0   left-hand side of screen
-int     MAXX     83   right-hand side of screen
-int     MINY      0   top (or bottom) of screen
-int     MAXY     47   bottom (or top) of screen
-int     H         8   height of a character
-int     W         6   width of a character
-int     lastCol   (MAXX - (3*W) -1)
-bool    BAR       false draw bar graph (else point)
-bool    INVERT    false make MINY bottom of screen
-int     COLOR     1   this usually works
-bool    BL        true  if character origin is on Bottom Left
+"type" | name | default | purpose
+-------|------|---------|---------
+class |  myGLCD | LCD  | class methods (display)
+int   |  MINX   |   0  | left-hand side of screen
+int   |  MAXX   |  83  | right-hand side of screen
+int   |  MINY   |   0  | top (or bottom) of screen
+int   |  MAXY   |  47  | bottom (or top) of screen
+int   |  H      |   8  | height of a character
+int   |  W      |   6  | width of a character
+int   |  lastCol |  (MAXX - (3*W) -1) | highest X address (column) plotted to
+bool  |  BAR     |  false | draw bar graph (else point)
+bool  |  INVERT  |  false | make MINY bottom of screen
+int   |  COLOR   |  1  | this usually works
+bool  |  BL    |    true | if character origin is on Bottom Left
 
 This code expects all the above to be defined and initialized, else defaults are used. Note that there is not default for the display class.
 
